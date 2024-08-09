@@ -1,0 +1,277 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-image: linear-gradient(180deg, #fff8dc, #db7093, white);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px; /* Adjust to your desired width */
+    height: 100%;
+    padding: 22px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #fff8dc, #db7093, white);
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+.topnav.show-nav {
+    width: 250px; /* Adjust to your desired expanded width */
+}
+
+.topnav .toggle-btn {
+    font-size: 24px;
+    border-block-start-color: skyblue;
+    border-block-end-color: black;
+    background: none;
+    cursor: pointer;
+}
+
+.topnav nav {
+    margin-top: 10px;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin-left: 0; /* Adjust margin-left to remove indentation */
+    padding: 0;
+    display: none; /* Initially hide the navigation links */
+    font-size: 25px;
+}
+
+.topnav.show-nav ul {
+    display: block;
+}
+
+.topnav ul li {
+    margin-bottom: 10px;
+}
+
+.topnav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.music-player {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    width: 75%;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.progress-bar {
+    width: 65%;
+}
+
+.progress-bar input[type="range"]{
+    width: 125%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, peachpuff, lavender, white);
+    outline: none;
+}
+
+.progress-bar input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: violet;
+    cursor: pointer;
+}
+
+.topnav.show-nav .music-player {
+    display: block;
+}
+
+#controls button {
+    background-image: linear-gradient(180deg, peachpuff, lavender, white);
+
+    border: none;
+    font-size: 20px;
+    color: black; /* Text color for buttons */
+    border-radius: 10%; /* Make the buttons circular */
+    width: 40px; /* Adjust width of the buttons */
+    height: 40px; /* Adjust height of the buttons */
+    cursor: pointer;
+    transition: background 0.3s; /* Add transition effect */
+    margin: 8px;
+}
+
+#controls button:hover {
+    background: linear-gradient(80deg, skyblue, violet, white); /* Adjust hover background color */
+}
+
+#volume-slider {
+    width: 50%; /* Adjusted to fit within the controls div */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    margin-top: 10px;
+    background-image: linear-gradient(180deg, peachpuff, lavender, white);
+    border-radius: 5px;
+    outline: none;
+}
+
+#volume-slider::-webkit-slider-thumb:hover{
+    background: linear-gradient(80deg, skyblue, violet, white); /* Adjust hover background color */
+}
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: violet;
+    cursor: pointer;
+}
+
+#playlist-btn{
+    top: 10px;
+    background-color: skyblue;
+}
+
+
+.playlist-dropdown {
+    position: relative;
+}
+
+.playlist-content {
+    display: none;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: skyblue;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.playlist-content.show-playlist {
+    display: block;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist li {
+    font-size: 16px; /* Adjust font size as needed */
+    color: black; /* Adjust color as needed */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#playlist li:hover {
+    color: blue; /* Adjust hover color as needed */
+}
+
+.center {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -150px;
+}
+
+.aesthetic-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.column {
+    margin: 0 20px;
+}
+
+.column a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.column a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+.alphabet-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.alphabet-nav a {
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.alphabet-nav a:hover {
+    text-decoration: underline;
+}
+

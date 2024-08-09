@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Aesthetic Realm</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav" id="topnav">
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleNav()">≡</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="aesthetics_list.html">Aesthetics</a></li>
+            </ul>
+
+            <div class="playlist-dropdown">
+              <button id="playlist-btn">Playlist</button>
+              <div class="playlist-content">
+                <ul id="playlist">
+                  <li>Elijah Nang - Gomenasai III</li>
+                  <li>Iruka - Newleaf</li>
+                  <li>Voyage by Nuver x Naga</li>
+                  <li>Raimu - Ode to the Moon</li>
+                  <li>Haiiro - Alone</li>
+                </ul>
+              </div>
+            </div>
+
+                 <!-- Music player -->
+          <div class="music-player">
+            <audio id="audio">
+                <source src="media/Elijah Nang - Gomenasai III.mp3">
+                <source src="media/Iruka - Newleaf.mp3">
+                <source src="media/Voyage by Nuver x Naga.mp3">
+                <source src="media/Raimu - Ode to the Moon.mp3">
+                <source src="media/Haiiro - Alone.mp3">
+            </audio>
+
+            <div class="progress-bar">
+              <input type="range" id="progress-slider">
+            </div>
+            <div id="controls">
+                <button id="previous-btn">|◁</button>
+                <button id="play">▷||</button>
+                <button id="next-btn">▷|</button>
+            </div>
+            <input type="range" id="volume-slider">
+        </div>
+        </nav>
+    </div>
+
+    <div class="homeText">
+      <h1>The Aesthetic Realm</h1>
+      <h2>Noun <br>
+      ● A set of principles concerned with the nature and appreciation of beauty, especially in art. <br>
+      ● The branch of philosophy that deals with the principles of beauty and artistic taste.</h2>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

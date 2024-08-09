@@ -1,0 +1,216 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Courier New', monospace;
+    color: #00FF00;
+}
+
+/* Background */
+body {
+    background: linear-gradient(180deg, #3C3C3B, #3C6B71, #00FF00);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation bar styles */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px; /* Adjust to your desired width */
+    height: 100%;
+    padding: 22px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    background: linear-gradient(180deg, #3C3C3B, #3C6B71, #00FF00);
+    transition: width 0.3s ease; /* Add transition effect */
+}
+
+.topnav.show-nav {
+    width: 250px; /* Adjust to your desired expanded width */
+}
+
+.topnav .toggle-btn {
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: #00FF00;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    color: white;
+}
+
+.topnav nav {
+    margin-top: 10px;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin-left: 0; /* Adjust margin-left to remove indentation */
+    padding: 0;
+    display: none; /* Initially hide the navigation links */
+    font-size: 25px;
+}
+
+.topnav.show-nav ul {
+    display: block;
+}
+
+.topnav ul li {
+    margin-bottom: 10px;
+}
+
+.topnav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #00FF00;
+}
+
+.playlist-dropdown {
+    position: relative;
+}
+
+.playlist-content {
+    display: none;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: #3C3C3B;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.playlist-content.show-playlist {
+    display: block;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist li {
+    font-size: 14px;
+    color: #00FF00;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#playlist li:hover {
+    color: white;
+}
+
+/* Music player styles */
+.music-player {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    width: 75%;
+    height: 100px;
+    background-color: #3C3C3B;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.topnav.show-nav .music-player {
+    display: block;
+}
+
+.progress-bar {
+    width: 65%;
+}
+
+.progress-bar input[type="range"] {
+    width: 125%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #00FF00;
+    outline: none;
+}
+
+.progress-bar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00FF00;
+    cursor: pointer;
+}
+
+#controls button {
+    background: #00FF00;
+    border: none;
+    font-size: 20px;
+    color: #3C3C3B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 8px;
+}
+
+#controls button:hover {
+    background: #3C6B71;
+}
+
+#volume-slider {
+    width: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    margin-top: 10px;
+    background: #00FF00;
+    border-radius: 5px;
+    outline: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00FF00;
+    cursor: pointer;
+}
+
+#playlist-btn {
+    top: 10px;
+    background-color: #3C6B71;
+    color: #00FF00;
+}
+
+#playlist-btn:hover {
+    color: white;
+}
+
+/* Content styles */
+.hackerText {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 550px;
+}

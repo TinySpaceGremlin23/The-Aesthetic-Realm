@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetics - Spacecore</title>
+    <link rel="stylesheet" type="text/css" href="spacecore.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav" id="topnav">
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleNav()">≡</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="aesthetics_list.html">Aesthetics</a></li>
+            </ul>
+
+            <div class="playlist-dropdown">
+              <button id="playlist-btn">Playlist</button>
+              <div class="playlist-content">
+                <ul id="playlist">
+                    <li>Deus Ex - 009 - UNATCO - Ambient</li>
+                  <li>Converter</li>
+                  <li>Insum (2019 Remaster)</li>
+                  <li>The Pink Panther Theme</li>
+                  <li>Deus Ex - 076 - Paris Club 1 - Ambient</li>
+                  <li>Rob Zombie - Dragula [Hot Ro Herman Remix] (The Matrix)</li>
+                  <li>Deus Ex_ Human Revolution Soundtrack - Hacking Ambient</li>
+                  <li>deadmau5 - Alone With You (HQ)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Music player -->
+            <div class="music-player">
+                <audio id="audio">
+                    <source src="media/Deus Ex - 009 - UNATCO - Ambient.mp3">
+                    <source src="media/Converter.mp3">
+                    <source src="media/Insum (2019 Remaster).mp3">
+                    <source src="media/The Pink Panther Theme.mp3">
+                    <source src="media/Deus Ex - 076 - Paris Club 1 - Ambient.mp3">
+                    <source src="media/Rob Zombie - Dragula [Hot Ro Herman Remix] (The Matrix).mp3">
+                    <source src="media/Deus Ex_ Human Revolution Soundtrack - Hacking Ambient.mp3">
+                    <source src="media/deadmau5 - Alone With You (HQ).mp3">
+                </audio>
+
+                <div class="progress-bar">
+                    <input type="range" id="progress-slider">
+                </div>
+                <div id="controls">
+                    <button id="previous-btn">|◁</button>
+                    <button id="play">▷||</button>
+                    <button id="next-btn">▷|</button>
+                </div>
+                <input type="range" id="volume-slider">
+            </div>
+        </nav>
+    </div>
+
+    <div class="spaceText">
+        <h1>Spacecore - An Astral Aesthetic of Cosmic Proportions</h1>
+        <p>Stars, Planets, Galaxies, oh my! Spacecore invites you to lose yourself on a <br>
+            celestial journey, where every star-crossed accessory and interstellar decor <br>
+            piece encapsulates the very essence of the vast universe. <br>
+            Come travel through the galaxies into an astronomical adventure!</p>
+    </div>
+    
+    <div class="paragraph left">
+        <p>The spacecore aesthetic revolves around anything and everything space-related,<br>
+        from stars and planets, to galaxies and beyond. But it's not just about what's in space,<br>
+        spacecore can be seen in many departments
+    </p>
+    </div>
+    
+    <script src="spacecore.js"></script>
+</body>
+</html>

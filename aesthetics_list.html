@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Aesthetic Realm - About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+    <div class="aesthetic-list">
+        <div class="column">
+            <a href="hacker.html">Hacker</a>
+            <a href="spacecore.html">Spacecore</a>
+            <a href="aesthetic3.html">Aesthetic 3</a>
+            <a href="aesthetic4.html">Aesthetic 4</a>
+        </div>
+        <div class="column">
+            <a href="aesthetic5.html">Aesthetic 5</a>
+            <a href="aesthetic6.html">Aesthetic 6</a>
+            <a href="aesthetic7.html">Aesthetic 7</a>
+            <a href="aesthetic8.html">Aesthetic 8</a>
+        </div>
+    </div>
+
+    <!-- Alphabet navigation bar -->
+    <div class="alphabet-nav">
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a href="#C">C</a>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a href="#H">H</a>
+        <a href="#I">I</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a href="#L">L</a>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#O">O</a>
+        <a href="#P">P</a>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a href="#T">T</a>
+        <a href="#U">U</a>
+        <a href="#V">V</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="topnav">
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleNav()">≡</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="aesthetics_list.html">Aesthetics</a></li>
+            </ul>
+
+            <div class="playlist-dropdown">
+              <button id="playlist-btn">Playlist</button>
+              <div class="playlist-content">
+                <ul id="playlist">
+                    <li>Rick Astley - Never Gonna Give You Up</li>    
+                  <li>Nintendo Wii - Mii Channel Theme</li>    
+                </ul>
+              </div>
+            </div>
+
+            <!-- Music player -->
+            <div class="music-player">
+                <audio id="audio">
+                    <source src="media/Rick Astley - Never Gonna Give You Up.mp3">
+                    <source src="media/Nintendo Wii - Mii Channel Theme.mp3">
+                </audio>
+
+                <div class="progress-bar">
+                  <input type="range" id="progress-slider">
+                </div>
+                <div id="controls">
+                    <button id="previous-btn">|◁</button>
+                    <button id="play">▷||</button>
+                    <button id="next-btn">▷|</button>
+                </div>
+                <input type="range" id="volume-slider">
+            </div>
+        </nav>
+    </div>
+
+    <script src="aesthetics_list.js"></script>
+</body>
+</html>
